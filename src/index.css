@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  background-color: #1a237e;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* @layer base {
+  body {
+    @apply font-sans bg-black text-base;
+  }
+} */
+
+/* Custom Classes */
+
+/* Skills Sub-Title */
+.skills-sub-title {
+  @apply text-white font-semibold text-xl mb-8;
+}
+
+/* Article Container */
+.article-container {
+  @apply flex flex-wrap flex-row gap-10 justify-around text-left text-white;
+}
+
+/* Article Styles */
+article {
+  @apply flex w-40 justify-around gap-2;
+}
+
+article .icon {
+  @apply cursor-default;
+}
+
+/* Icon Styles */
+.icon {
+  @apply cursor-pointer h-8;
+  
+}
+
+/* Gradient Background */
+.gradient-02 {
+  @apply absolute w-52 h-[438px] top-0 right-0 bg-[#837afb] blur-[190px];
+}
+
+/* Color Container */
+.color-container {
+  @apply border border-gray-400 bg-transparent;
+}
+
+/* Project Image */
+.project-img {
+  @apply rounded-2xl w-9/12 h-9/12;
+}
+
+/* Project Title */
+.project-title {
+  @apply m-4 text-white;
+}
+
+/* Experience Details Container */
+.experience-details-container {
+  @apply flex justify-center flex-col;
+}
+
+/* Buttons */
+.btn-container {
+  @apply flex justify-center gap-4;
+}
+
+.btn {
+  @apply font-semibold transition-all duration-300 ease-in-out p-4 w-32 rounded-2xl;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  @apply border border-gray-800;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  @apply cursor-pointer text-blue-400;
+}
+
+.btn-color-2 {
+  @apply bg-white;
+}
+
+.btn-color-2:hover {
+  @apply border-pink-500;
+}
+
+/* About Containers */
+.about-containers {
+  @apply gap-8 mb-8 mt-8;
+}
+
+.about-containers,
+.about-details-container {
+  @apply flex;
+}
+
+/* Details Container */
+.details-container {
+  @apply p-6 flex-1 rounded-2xl border border-white text-center;
+}
+
+/* Section Container */
+.section-container {
+  @apply flex gap-16 h-4/5;
+}
+
+/* Section Picture Container */
+.section__pic-container {
+  @apply h-96 w-96 my-auto;
+}
+
+/* Experience Sub-Title */
+.experience-sub-title {
+  @apply text-white font-semibold text-xl mb-8;
+}
+
+/* Article Styles */
+article {
+  @apply flex w-40 justify-around gap-2;
+}
+
+/* Project Section */
+#projects {
+  @apply relative;
+}
+
+/* Gradient Background */
+.gradient-05 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.card-gradient {
+  @apply absolute w-52 h-80 left-0 top-0 bg-[#8d39a3] blur-[175px];
+}
+
+/* Responsive Section Padding */
+.section {
+  @apply py-8 px-4;
+}
+
+@media (min-width: 640px) {
+  .section {
+    @apply py-40 px-48;
+  }
+
+  .footer-img {
+    @apply float-right mt-20;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    @apply py-40 px-52;
+  }
+
+  .footer-img {
+    @apply float-right mt-20;
+  }
+}
+
+/* Footer Styles */
+.footer-list-title {
+  @apply text-white text-lg mb-4 block no-underline;
+}
+
+.footer-list {
+  @apply list-none m-0 p-0 flex flex-col items-start text-white;
+}
+
+.footer-lists {
+  @apply flex float-left items-center mt-[52rem] gap-12 p-6 text-center;
+}
+
+.footer-bottom .container {
+  @apply flex justify-center flex-wrap items-center;
+}
+
+.footer-bottom {
+  @apply py-8 mt-3 pb-6 text-white;
+}
+
+.copyright {
+  @apply text-center;
+}
+
+.container {
+  @apply px-4 pt-1;
+}
+
+.footer-img {
+  @apply mt-[55rem];
+}
+
+/* Hash Span for Anchor Links */
+.hash-span {
+  @apply -mt-24 pb-24 block;
+}
+
+/* Gradient Text Styles */
+.black-gradient {
+  background: linear-gradient(to right, #b31313, #872121);
+}
+
+.violet-gradient {
+  background: linear-gradient(-90deg, #e34dee 0%, rgb(135, 98, 214) 100%);
+}
+
+.green-pink-gradient {
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Canvas Loader Styles */
+.canvas-loader {
+  @apply text-[10px] w-[1em] h-[1em] rounded-full relative animate-spin;
+  text-indent: -9999em;
+  transform: translateZ(0);
+}
+
+/* Keyframes */
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(244, 65, 65, 0.941),
+      2.5em 0em 0 0em rgb(231, 44, 44),
+      1.75em 1.75em 0 0em rgba(224, 31, 31, 0.913),
+      0em 2.5em 0 0em rgba(243, 82, 82, 0.925),
+      -1.8em 1.8em 0 0em rgba(196, 70, 70, 0.977),
+      -2.6em 0em 0 0em rgba(231, 70, 70, 0.998),
+      -1.8em -1.8em 0 0em rgba(229, 55, 55, 0.895);
+  }
+  /* ... (rest of the keyframes) */
+}
+
+/* Heading Styles */
+.h1 {
+  @apply text-2xl text-center mx-auto text-white;
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    @apply text-3xl;
+  }
+}
+
+/* Button Styles */
+.btn-color-2 {
+  @apply mt-8 border border-gray-800 bg-none;
+}
+
+.btn-color-2:hover {
+  @apply cursor-pointer text-white bg-[#a551ea];
+}
+
+/* Hamburger Menu (if used) */
+#hamburger-nav {
+  @apply hidden;
+}
+
+.hamburger-menu {
+  @apply relative inline-block;
+}
+
+.hamburger-icon {
+  @apply flex flex-col justify-between h-6 w-8 cursor-pointer;
+}
+
+.hamburger-icon span {
+  @apply w-full h-px bg-black transition-all ease-in-out duration-300;
+}
