@@ -1,5 +1,5 @@
 import Section from "./Section";
-import checkmark from "../assets/checkmark.png";
+import checkmark from "../assets/checkmark.svg";
 const Skills = () => {
   return (
     <Section  className="mt-15" >

@@ -7,11 +7,4 @@ export {
     StartSteps,
   TypingText,
 }
-
-
-export const whatoffers = [
-  'Creative Full-Stack Websites',
-  'Custom Web Application',
-  'High-Quality UI/UX Designs',
-   
-]
+ 

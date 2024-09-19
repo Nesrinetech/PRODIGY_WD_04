@@ -7,16 +7,12 @@ import { useRef } from "react";
 const Hero = () => {
   const parallaxRef = useRef(null);
 
-  const handleDownload = () => {
-    window.open('/resume nesrine.pdf', '_blank');
-  };
-
+ 
 
   return (
     <Section
     className="pt-[5rem] -mt-[8rem]"
     crosses
-    // crossesOffset="lg:translate-y-[5.25rem]"
     customPaddings
     id="hero"
     >
